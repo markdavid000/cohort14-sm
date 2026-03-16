@@ -1,13 +1,7 @@
-# Sample Hardhat Project
+# DEPLOYED ADDRESS
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+**_0xCD45761790BFbf379D6B822b94842f7723B3332a_**
 
-Try running some of the following tasks:
+# VERIFIED CONTRACT
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+https://sepolia-blockscout.lisk.com/address/0xCD45761790BFbf379D6B822b94842f7723B3332a#code

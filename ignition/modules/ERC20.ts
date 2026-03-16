@@ -1,14 +1,19 @@
-// This setup uses Hardhat Ignition to manage smart contract deployments.
-// Learn more about it at https://v2.hardhat.org/ignition
-
 import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
 
 const ERC20Module = buildModule("ERC20Module", (m) => {
-  const lock = m.contract("Lock", [unlockTime], {
-    value: lockedAmount,
-  });
+  const tokenName = "MARKDAVID";
+  const tokenSymbol = "MTK";
+  const tokenDecimals = 18;
+  const initialSupply = 1000000;
 
-  return { lock };
+  const erc20 = m.contract("ERC20", [
+    tokenName,
+    tokenSymbol,
+    tokenDecimals,
+    initialSupply,
+  ]);
+
+  return { erc20 };
 });
 
-export default LockModule;
+export default ERC20Module;
